@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RechercheRvActivity">
+
+
+    <TextView
+        android:id="@+id/tvMois"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mois :"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textAlignment="center"/>
+
+    <Spinner
+        android:id="@+id/spMois"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        android:layout_below="@+id/tvMois"></Spinner>
+
+    <TextView
+        android:id="@+id/tvAnnee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Année :"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/spMois"/>
+
+
+    <Spinner
+        android:id="@+id/spAnnee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAnnee"></Spinner>
+
+    <Button
+        android:id="@+id/bafficher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="aficher la liste des rapports"
+        android:textAllCaps="true"
+        android:layout_below="@+id/spAnnee"/>
+
+</RelativeLayout>

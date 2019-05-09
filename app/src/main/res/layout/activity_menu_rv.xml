@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuRvActivity">
+
+
+    <Button
+        android:id="@+id/bconsulter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consulter un rapport de visite"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:onClick="consulter"
+        />
+
+    <Button
+        android:id="@+id/bsaisir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Saisir un rapport de visite"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:onClick="saisir"
+        android:layout_below="@+id/bconsulter"/>
+
+</RelativeLayout>

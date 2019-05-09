@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/images"/>
+
+    <TextView
+        android:id="@+id/tvMatricule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Matricule :"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/image"/>
+
+    <EditText
+        android:id="@+id/etMatricule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrez votre matricule"
+        android:textSize="26dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/tvMatricule"/>
+
+    <TextView
+        android:id="@+id/tvMdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mot de passe :"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/etMatricule"/>
+
+    <EditText
+        android:id="@+id/etMdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrez votre mot de passe"
+        android:inputType="textPassword"
+        android:textSize="26dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/tvMdp"/>
+
+    <Button
+        android:id="@+id/bValider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etMdp"
+        android:text="Valider"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+        android:onClick="seConnecter"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/bAnnuler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bValider"
+        android:text="Annuler"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+        android:onClick="Annuler" />
+
+
+
+</RelativeLayout>

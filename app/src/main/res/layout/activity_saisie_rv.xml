@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaisieRvActivity">
+
+    <TextView
+        android:id="@+id/tvDateVisite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date de la visite : "
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/bModifier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modifier date"
+        android:textSize="20dp"
+        android:layout_below="@+id/tvDateVisite"/>
+
+    <TextView
+        android:id="@+id/tvPraticien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Praticien :"
+        android:textSize="25dp"
+        android:layout_below="@+id/bModifier"/>
+
+    <Spinner
+        android:id="@+id/spPraticien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        android:layout_below="@+id/tvPraticien"></Spinner>
+
+
+    <TextView
+        android:id="@+id/tvMotif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Motif :"
+        android:textSize="25dp"
+        android:layout_below="@+id/spPraticien"/>
+
+    <Spinner
+        android:id="@+id/spMotif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        android:layout_below="@+id/tvMotif"></Spinner>
+
+    <TextView
+        android:id="@+id/tvBilan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bilan :"
+        android:textSize="25dp"
+        android:layout_below="@+id/spMotif"/>
+
+    <EditText
+        android:id="@+id/etBilan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:layout_below="@+id/tvBilan"/>
+
+    <TextView
+        android:id="@+id/tvCoefficient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Coefficient de confiance :"
+        android:textSize="25dp"
+        android:layout_below="@+id/etBilan"/>
+
+    <Spinner
+        android:id="@+id/spCoefficient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCoefficient"></Spinner>
+
+
+
+    <Button
+        android:id="@+id/bValider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Valider"
+        android:layout_below="@+id/spCoefficient"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:id="@+id/bAnnuler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Annuler"
+        android:layout_below="@+id/bValider"
+        android:layout_alignParentLeft="true"/>
+
+
+</RelativeLayout>
