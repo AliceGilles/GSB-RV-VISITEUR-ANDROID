@@ -24,6 +24,8 @@ import org.json.JSONObject ;
 
 import fr.gsb.rv.entites.Visiteur;
 
+// Activite principale
+
 public class MainActivity extends AppCompatActivity {
 
     ImageView image ;
